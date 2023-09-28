@@ -3,36 +3,36 @@ import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 export default function Topbar() {
   return (
-    <div className="topbarContainer">
-        <div className="topbarLeft">
+    <div className="topBarContainer">
+        <div className="topBarLeft">
             <span className="logo">Connecting</span>
         </div>
-        <div className="topbarCenter">
-            <div className="searchbar">
-                <Search />
+        <div className="topBarCenter">
+            <div className="searchBar">
+                <Search className="searchIcon"/>
                 <input placeholder="Search for friends, posts or videos" className="searchInput"/>
             </div>
         </div>
-        <div className="topbarRight">
-            <div className="topbarLinks">
-                <span className="topbarLink">Homepage</span>
-                <span className="topbarLink">Timeline</span>
+        <div className="topBarRight">
+            <div className="topBarLinks">
+                <span className="topBarLink">Homepage</span>
+                <span className="topBarLink">Timeline</span>
             </div>
-            <div className="topbarIcons">
-                <div className="topbarIconItem">
+            <div className="topBarIcons">
+                <div className="topBarIconItem">
                     <Person />
-                    <span className="topbarIconBadge">1</span>
+                    <span className="topBarIconBadge">1</span>
                 </div>
-                <div className="topbarIconItem">
+                <div className="topBarIconItem">
                     <Chat />
-                    <span className="topbarIconBadge">1</span>
+                    <span className="topBarIconBadge">1</span>
                 </div>
-                <div className="topbarIconItem">
+                <div className="topBarIconItem">
                     <Notifications />
-                    <span className="topbarIconBadge">1</span>
+                    <span className="topBarIconBadge">1</span>
                 </div>
             </div>
-            <img src="/assets/person/person1.png" alt="MyImage" className="topbarImage"/>
+            <img src="/assets/person/person1.png" alt="MyImage" className="topBarImage"/>
         </div>
     </div>
   )
