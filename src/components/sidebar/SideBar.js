@@ -1,5 +1,5 @@
 import "./sidebar.css";
-import {RssFeed} from "@mui/icons-material"
+import {Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline} from "@mui/icons-material"
 
 export default function SideBar() {
   return (
@@ -7,40 +7,40 @@ export default function SideBar() {
         <div className="sideBarWrapper">
             <ul className="sideBarList">
                 <li className="sideBarListItem">
-                    <RssFeed />
+                    <RssFeed className="sideBarIcon"/>
                     <span className="sideBarListItemText">Feed</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <Chat className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Chats</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <PlayCircleFilledOutlined className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Videos</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <Group className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Groups</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <Bookmark className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Bookmarks</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <HelpOutline className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Questions</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <WorkOutline className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Jobs</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <Event className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Events</span>
                 </li>
                 <li className="sideBarListItem">
-                    <RssFeed />
-                    <span className="sideBarListItemText">Feed</span>
+                    <School className="sideBarIcon"/>
+                    <span className="sideBarListItemText">Courses</span>
                 </li>
             </ul>
             <button className="sideBarButton">Show More</button>
