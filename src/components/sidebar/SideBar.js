@@ -1,5 +1,7 @@
 import "./sidebar.css";
-import {Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline} from "@mui/icons-material"
+import {Bookmark, Chat, Event, Group, HelpOutline, PlayCircleFilledOutlined, RssFeed, School, WorkOutline} from "@mui/icons-material";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function SideBar() {
   return (
@@ -46,30 +48,9 @@ export default function SideBar() {
             <button className="sideBarButton">Show More</button>
             <hr className="sideBarHr"/>
             <ul className="sideBarFriendList">
-                <li className="sideBarFriend">
-                    <img className="sideBarFriendImage" src="/assets/person/person2.png" alt=""/>
-                    <spna className="sideBarFriendName">Someone</spna>
-                </li>
-                <li className="sideBarFriend">
-                    <img className="sideBarFriendImage" src="/assets/person/person2.png" alt=""/>
-                    <spna className="sideBarFriendName">Someone</spna>
-                </li>
-                <li className="sideBarFriend">
-                    <img className="sideBarFriendImage" src="/assets/person/person2.png" alt=""/>
-                    <spna className="sideBarFriendName">Someone</spna>
-                </li>
-                <li className="sideBarFriend">
-                    <img className="sideBarFriendImage" src="/assets/person/person2.png" alt=""/>
-                    <spna className="sideBarFriendName">Someone</spna>
-                </li>
-                <li className="sideBarFriend">
-                    <img className="sideBarFriendImage" src="/assets/person/person2.png" alt=""/>
-                    <spna className="sideBarFriendName">Someone</spna>
-                </li>
-                <li className="sideBarFriend">
-                    <img className="sideBarFriendImage" src="/assets/person/person2.png" alt=""/>
-                    <spna className="sideBarFriendName">Someone</spna>
-                </li>
+                {Users.map(u => (
+                    <CloseFriend key={u.id} user={u}/>
+                ))}
             </ul>
         </div>
     </div>
