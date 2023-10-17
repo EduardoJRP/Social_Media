@@ -2,7 +2,7 @@ import "./rightbar.css";
 import { Users } from "../../dummyData";
 import Online from "../online/Online"
 
-export default function RightBar() {
+export default function RightBar({profile}) {
   return (
     <div className="rightBar">
       <div className="rightBarWrapper">
