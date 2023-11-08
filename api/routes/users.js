@@ -46,7 +46,7 @@ router.get("/:id", async (req,res) => {
         const user = await User.findById(req.params.id);
         const {password, updateAt, ...other} = user._doc
         res.status(200).json(other)
-    } catch {
+    } catch(err) {
         res.status(500).json(err)
     }
 });
