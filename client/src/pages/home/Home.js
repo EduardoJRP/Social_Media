@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <div className='homeContainer'>
+      <div className='flex'>
         <SideBar />
         <Feed />
         <RightBar />
