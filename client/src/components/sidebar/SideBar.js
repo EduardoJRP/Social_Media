@@ -5,7 +5,7 @@ import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function SideBar() {
   return (
-    <div className="sideBar">
+    <div className="sticky top-52 flex basis-3/12 overflow-y-scroll">
         <div className="sideBarWrapper">
             <ul className="sideBarList">
                 <li className="sideBarListItem">

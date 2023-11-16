@@ -1,18 +1,17 @@
-import React from 'react';
-import "./login.css"
+import React from 'react'
 
 export default function Login() {
   return (
-    <div className='login'>
-        <div className='loginWrapper'>
-            <div className='loginLeft'>
-                <h3 className='loginLogo'>Connect</h3>
-                <span className='loginDescription'>
+    <div className='flex h-screen w-screen items-center justify-center bg-slate-100'>
+        <div className='flex h-4/6 w-4/6'>
+            <div className='flex flex-1 flex-col justify-center'>
+                <h3 className='mb-10 text-5xl font-extrabold text-blue-700'>Connect</h3>
+                <span className='text-xl'>
                     Connect with friends around the world
                 </span>
             </div>
-            <div className='loginRight'>
-                <div className='loginBox'>
+            <div className='flex flex-1 flex-col justify-center'>
+                <div className='flex h-96 flex-col justify-between rounded-xl bg-white p-10'>
                     <input placeholder='Email' className='h-12 rounded-xl border-2 border-solid border-gray-400 pl-5 text-lg focus:outline-none'/>
                     <input placeholder='Password' className='h-12 rounded-xl border-2 border-solid border-gray-400 pl-5 text-lg focus:outline-none'/>
                     <button className='h-12 cursor-pointer rounded-xl border-none bg-blue-700 text-xl font-medium text-white'>Log In</button>
