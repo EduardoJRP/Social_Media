@@ -3,11 +3,13 @@ import { Users } from "../../dummyData";
 import Online from "../online/Online"
 
 export default function RightBar({profile}) {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   const HomeRightBar = () => {
     return(
       <>
         <div className="birthdayContainer">
-            <img className="birthdayImage" src="/assets/gift.png" alt=""/>
+            <img className="birthdayImage" src={`${PF}/gift.png`} alt=""/>
             <span className="birthdayText"><b>Someone</b> and <b>3 other friends</b> have a birthday today</span>
           </div>
           <h4 className="rightBarTitle">Online Friends</h4>
@@ -41,7 +43,7 @@ export default function RightBar({profile}) {
         <h4 className="rightBarTitle">User Friends</h4>
         <div className="rightBarFollowings">
           <div className="rightBarFollowing">
-            <img className="rightBarFollowingImage" src="assets/person/person1.png" alt=""/>
+            <img className="rightBarFollowingImage" src={`${PF}/person/person1.png`} alt=""/>
             <span className="rightBarFollowingName">Someone</span>
           </div>
         </div>
